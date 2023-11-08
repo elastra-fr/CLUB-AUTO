@@ -19,9 +19,9 @@
     <a id="toggleButtonMenu" href="#"><img src="images/hamburger.svg" alt=""></a>
     <div id="headInfos">
     <div id="mainTitle"><a href="index.html"><h1><span>CLUB AUTO</span></h1></a></div>
-    <div id="adress"><img src="images/icone-adresse.png" alt="Icone adresse"><p><span>Adresse : </span></br>AVENUE CHARLES DE GAULLE</br>75000 PARIS</p></div>
-    <div id="tel"><img src="images/icon-telephone.png" alt="Icone Téléphone"><p><span>Téléphone :</span></br><span>01 23 45 67 89</span></p></div>
-    <div id="horaires"><p><span>OUVERTURE :</span> <span>Du lundi au Samedi</span></br><span>HORAIRES :</span> <span">De 9h à 17h</span></p></div>
+    <div id="adress"><img src="images/icone-adresse.png" alt="Icone adresse"><p><span>Adresse : </span><br/>AVENUE CHARLES DE GAULLE<br/>75000 PARIS</p></div>
+    <div id="tel"><img src="images/icon-telephone.png" alt="Icone Téléphone"><p><span>Téléphone :</span><br/><span>01 23 45 67 89</span></p></div>
+    <div id="horaires"><p><span>OUVERTURE :</span> <span>Du lundi au Samedi</span><br/><span>HORAIRES :</span> <span>De 9h à 17h</span></p></div>
     <div id="headerSocials"><a href=""><img src="images/fb.png" alt=""></a><a href=""><img src="images/twt.png" alt=""></a></div>
     </div>
 
@@ -40,7 +40,7 @@
     <!--Fin navigation-->
 
 <img id="mainImg" src="images/vehicule1.jpg" alt="Des véhicules soigneusement alignés sur un parking" title="Des véhicules soigneusement alignés sur un parking">
-<a href="#"></a> <h1><span>CLUB AUTO</span> LE MEILLEUR DE L'AUTOMOBILE</h1></a> 
+<a href="#"><h1><span>CLUB AUTO</span> LE MEILLEUR DE L'AUTOMOBILE</h1></a> 
 
 
 </header>
@@ -57,18 +57,18 @@
 <p>CONTACTEZ NOUS</p>
 
 <div id="inputsWrapper">
-<div><label for="prenom">Prénom*</label><input name="prenom" type="text" placeholder="Entrez votre nom" required/></div>
-<div><label for="nom">Nom*</label><input name="nom" type="text" placeholder="Entrez votre nom" required/></div>
+<div><label for="prenom">Prénom*</label><input id="prenom" name="prenom" type="text" placeholder="Entrez votre nom" required/></div>
+<div><label for="nom">Nom*</label><input id="nom" name="nom" type="text" placeholder="Entrez votre nom" required/></div>
 
 
 
 
 
-<div><label for="email">Email*</label><input name="email" type="email" placeholder="Entrez une adresse mail valide" required/></div>
-<div><label for="tel">Téléphone</label><input name="tel" type="tel" placeholder="Numéro de téléphone"/></div>
+<div><label for="email">Email*</label><input id= "email" name="email" type="email" placeholder="Entrez une adresse mail valide" required/></div>
+<div><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" placeholder="Numéro de téléphone"/></div>
 </div>
 
-<div id="messageBox"><label for="message">Message</label><textarea name="message" placeholder="Ecrivez votre message" required></textarea></div>
+<div id="messageBox"><label for="message">Message</label><textarea id="message" name="message" placeholder="Ecrivez votre message" required></textarea></div>
 
 <input type="submit"/>
 
@@ -101,19 +101,19 @@
         </div>
         
         <div>
-            <h4>NEWSLETTER</h3><div><input type="text" placeholder="Entrez votre email"><a><img src="images/rss.png" alt="Icone flux Rss" title="Icone flux rss"></a>
+            <h3>NEWSLETTER</h3><div><input type="text" placeholder="Entrez votre email"><a><img src="images/rss.png" alt="Icone flux Rss" title="Icone flux rss"></a>
         </div><p>Inscrivez-vous pour recevoir les dernières offres</p>
     </div>
             
         <div>
             <h3>RESEAUX SOCIAUX</h3>
             <ul>
-                <a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png"></a>
-                <a href="https://twitter.com" target="_blank"><img src="images/twt.png"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png"></a>
-                <a href="https://www.linkedin.com" target="_blank"><img src="images/lkdn.png"></a>
-                <a href="https://www.youtube.com" target="_blank"><img src="images/yt.png"></a>
-                        </ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="Icone Facebook" title="Icone Facebook"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="images/twt.png" alt="Icone Twitter" title="Icone Twitter"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" alt="Icone Instagram" title="Icone Instagram"></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><img src="images/lkdn.png" alt="Icone Linkedin" title="Icone Linkedin"></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="images/yt.png" alt="Icone Youtube" title="Icone Youtube"></a></li>
+            </ul>
         </div>
     
     </div>
@@ -122,6 +122,7 @@
     </footer>
     
     <!--FIN FOOTER-->
+    
 
 
     <script src="./js/main.js"></script>
