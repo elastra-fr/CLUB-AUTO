@@ -14,16 +14,406 @@ Structure fichier CSS :
 
 /************************************1- CSS COMMUN*********************************************************/
 
+:root{
+
+    /*Eléments de la charte graphique*/
+
+--ClubAutoBlanc:#FFFFFF;
+--ClubAutoOrange:#FAB637;
+--ClubAutoRouge:#FF4848;
+--ClubAutoMarron:#CC6119;
+--ClubAutoGris:#ECEFF3;
+--ClubAutoNoir:#232628;
+--ClubAutoBleu:#6C98E1;
+
+--ClubAutoTexte: 'Open Sans', sans-serif;
+--ClubAutoTitres: 'Montserrat', sans-serif;
+}
+
+/*Coloration ponctuelle texte*/
+.whiteTouch{
+color: var(--ClubAutoBlanc);
+}
+
+.blueTouch{
+color: var(--ClubAutoBleu);
+
+}
 
 
 
+.isBold{
+font-weight: bolder;
+
+}
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+max-width: 1366px;
+margin: 0 auto;
+font-family: var(--ClubAutoTexte);
+color:var(--ClubAutoGris);
+
+
+}
+
+h1, h2, h3{
+    font-family: var(--ClubAutoTitres);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited:link{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/*Container flex, bg black*/
+.genericContainer{
+background-color: var(--ClubAutoNoir);
+
+}
+
+
+/*Header*/
+
+.mobileMenu{
+    float: right;
+    display: block;
+    
+    }    
+    
+    .mobileMenu img{
+        
+        
+        margin-top: 30px;
+        width: 50px;
+    
+    }
+
+header h1{
+    padding-left: 3.5vw;
+    padding-bottom: 20px;
+    margin-bottom: auto;
+    color:var(--ClubAutoMarron);
+}
+
+#headInfos{
+
+        
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: start;
+    color: #FFFFFF;
+    }
+    
+    #mainTitle, #adress, #horaires, #headerSocials{
+    display: none;
+    
+    }
+    
+    
+    #headInfos div{
+    margin-top: 20px;
+    
+    }
+    
+    #headInfos div img{
+    width: 48px;
+    
+    }
+
+    .iconTextGrid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        
+        
+        }
+        
+        .iconTextGrid p{
+            margin-top: 0;
+            margin-left: 2px;   
+            }
+            
+        
+        
+        .iconTextGrid div{
+        
+            display: flex;
+            flex-direction: column;
+            
+            
+            }
+        
+            #horaires{
+        align-self: auto;
+        
+            }
+        
+            #horaires p{
+        margin-top: 0;
+        
+            }
+        
+            #headerSocials a{
+                display: flex;
+                width: 50px;
+                background-color: #ECEFF3;
+                border-radius:6px;
+                margin: 5px;
+            }
+        
+
+.flexContCol{
+display: flex;
+flex-direction: column;
+
+}
+
+#mainImg{
+    display: none;
+}
+
+/*Fin header*/
+
+/*Footer*/
+footer{
+    width: 100%;
+    margin :0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+
+
+#footerInfo{
+margin: 40px 10px;    
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, auto);
+justify-items: center;
+border-bottom: 1px solid var(--ClubAutoBlanc);
+font-size: .9rem;
+}
+
+.info{
+width: 98%;
+display: flex;
+flex-direction: column;
+margin: 15px auto;
+}
+
+#mention{
+justify-self: center;
+font-size : 0.8rem;
+}
+
+.newsLetter{
+display: flex;
+align-content: center;
+
+
+}
+
+.newsLetter input{
+    height: 32px;
+    width: 90%;
+    margin-right: 0;
+    border:none;
+}
+
+.newsLetter a img{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+.socials{
+display: flex;
+flex-direction: row;
+justify-content:flex-start;
+
+
+}
+
+.socials a{
+width: 40px;
+height: 40px;
+background-color: #ECEFF3;
+margin: 2px;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.socials a img{
+    width: 38px;
+    height: 38px;     
+    }
+/*Fin Footer*/
 
 
 /************************************2- SPECIFIQUE INDEX******************************************************/
 
+
+#presentation{
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    
+    gap: 20px;
+    
+    }
+    
+    #presentation article{
+    height: 100%;    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    }
+    
+    .cardText{
+    height: auto;
+    }
+    
+    
+    
+    #presentation article img{
+    width: 100%;
+    align-self: center;
+    
+    }
+    
+    #mainImg{
+        display: none;
+    }
+
+
 /************************************3- SPECIFIQUE CONTACT******************************************************/
+
+        /*Formulaire*/
+
+        #contactForm{
+            background-color: rgba(255, 255, 255, 0.7);
+            color: var(--ClubAutoNoir);
+            width: 65vw;
+            margin: 0 auto;
+            padding: 6vw 6vw;
+            gap: 25px;
+            }
+
+        #contactContent{
+            background-color: #ECEFF3;
+            background-image: url("../images/vehicule3.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+                        }
+
+                        #inputsWrapper{
+    
+gap: 25px;
+
+}
+
+#contactForm p{
+font-weight: bold;
+font-size: 2.5em;
+
+
+}
+
+#contactForm input[type=submit]{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 15px 40px 15px 40px;
+    background-color: #6C98E1;
+    text-decoration: none;   
+    justify-self: stretch;
+    text-align: center;
+    border: none;
+    }
+
+.flexContCol label{
+font-weight: bold;
+margin-bottom: 15px;
+
+}
+
+.flexContCol input{
+background-color: #ECEFF3;
+border:none;
+height: 6vh;
+}
+
+.flexContCol textarea{
+    background-color: #ECEFF3;
+    border:none;
+    height: 20vh;
+    }
+
+
+
+        /*Fin formulaire*/
 
 /************************************4- SPECIFIQUE SINGLE CAR******************************************************/
 
 /************************************5-  MEDIA QUERIES ******************************************************/
 
+@media screen and (min-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+#footerInfo{
+    max-width: 950px;
+    margin: 0 auto;
+    font-size: .9rem;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+justify-items: center;
+gap: 20px;
+
+}
+
+
+
+/*FIN FOOTER*/
+
+
+
+
+
+
+}
