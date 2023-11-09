@@ -328,16 +328,14 @@ justify-content: center;
 
 /************************************2- SPECIFIQUE Accueil******************************************************/
 
-
+/*Section présentation*/
 #presentation{
     max-width: 950px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-    
     gap: 20px;
-    
+    color: var(--ClubAutoNoir);
     }
     
     #presentation article{
@@ -362,6 +360,247 @@ justify-content: center;
     #mainImg{
         display: none;
     }
+
+    /*Fin Section présentation*/
+
+
+    /*Section vente ou location*/
+
+    #saleOrLoc{
+        max-width: 950px;
+        margin: 0 auto;
+        background-image: url("../images/vente-location.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        
+        }
+        
+        #saleOrLoc article a{
+            text-decoration: none;
+        }
+        
+        .saleOrLocCard{
+        width: 100%;
+        
+        
+        }
+        
+        .saleOrLocCard h2{
+            
+            
+            max-width: 50%;
+            margin: 5% auto;
+            
+            }
+        
+        .saleOrLocCard p{
+            
+            color: #FFFFFF;
+            max-width: 50%;
+            margin: 10px auto;
+            
+            }
+        
+        .locCard{
+        background-color: rgba(250, 182, 55, 0.8);
+        
+        }
+        
+        .saleCard{
+        background-color: rgba(255,72,72,0.8);
+        
+        }
+
+    /*Fin section vente ou location*/
+
+    /*Section véhicules récents*/
+#newCars{
+    max-width: 950px;
+background-color: black;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+
+}
+
+.decoTitle{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto;
+    border-bottom:#CC6119 2px solid;
+
+}
+
+#carsWrapper{
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+
+.cardCars{
+width: 95vw;
+margin: 0 auto;
+
+
+}
+
+.cardCarsInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #232628;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+    
+    }
+
+    .cardCarsInfo p{
+    margin-left: 20px;    
+    width: 60%;
+    font-size: 0.85em;
+    }
+
+ 
+
+
+    .priceTag{
+        margin-top: 1em;
+        margin-left: 1em;
+        padding: 10px;
+        background-color: #6C98E1;
+        align-self: flex-start;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 0.85em;
+
+    }
+
+    .isCrossed{
+color: black;
+font-size: 0.75em;
+font-weight: lighter;
+text-decoration: line-through;
+
+    }
+
+#carsWrapper article img{
+width: 100%;
+
+}
+
+/*Fin section véhicules récents*/
+
+/*Section Pourquoi nous ?*/
+
+#whyUs{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+margin: 0 auto;
+}
+
+#whyUs h2{
+    align-self: center;
+
+}
+
+#whyUsWrapper{
+display: flex;
+flex-direction: column;
+margin: 20px auto;
+
+}
+
+.cardWhy{
+max-width: 80%;
+    display: grid;
+    grid-template-areas: "icone titre"
+                        " icone texte"
+                        "icone texte" ;
+                        gap: 20px;
+                       
+
+
+}
+
+.cardWhy img{
+    grid-area: icone;
+    width: 65px;
+
+}
+
+.cardWhy h3{
+    text-transform: uppercase;
+    grid-area: titre;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.cardWhy p{
+    grid-area: texte;
+    margin: 0;
+    color: grey;
+    font-size: 0.9em;
+    align-self: flex-end;
+
+}
+
+.buttonWhy{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: 15px 40px 15px 40px;
+    background-color: #6C98E1;
+    text-decoration: none;   
+    justify-self: stretch;
+    text-align: center;
+    border: none;
+    margin: 25PX auto;
+    
+
+}
+
+
+/*Fin Section Pourquoi nous*/
+
+/*Section conclusion*/
+
+#conclusion{
+        
+    max-width: 950px;
+    margin: 0 auto;
+    background-image: url("../images/vehicule3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    
+
+}
+
+#conclusion article p{
+    color: #232628;
+
+}
+
+#conclusion article a{
+    text-decoration: none;
+    color: #232628;
+
+
+}
+
+/*Fin Section conclusion*/
+
 
 
 /************************************3- SPECIFIQUE CONTACT******************************************************/
@@ -434,6 +673,83 @@ height: 6vh;
         /*Fin formulaire*/
 
 /************************************4- SPECIFIQUE SINGLE CAR******************************************************/
+
+/*Breadcrumbs*/
+
+.breadcrumbs{
+    max-width: 950px;
+display: flex;
+border-bottom :#ECEFF3 1px solid ;
+align-content: flex-start;
+margin: 0 auto;
+}
+
+.breadcrumbs li a{
+text-decoration: none;
+color: #aeb1b5;
+font-size: 0.75em;
+
+}
+
+.breadcrumbs li+li:before {
+    padding: 8px;
+    color:#aeb1b5;
+    content: "/\00a0";
+}
+
+.breadcrumbs li a:hover {
+    color:#232628;
+    text-decoration: underline;
+  }
+
+/*Fin breadcrumbs*/
+
+
+#mainSingleCar{
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+        }
+    
+        .singleCarWrapper{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    
+        }
+    
+        .singleCarWrapper img, nav{
+            width: 100%;
+            
+                }
+    
+        #onglets{
+            display: flex;
+            flex-direction: column;
+            background-color: #232628;
+            width: 90%;
+            margin: 0  auto;
+            padding: 0;
+            justify-items: center;
+    
+    
+        }
+    
+        .itemOnglets{
+    
+           padding: 20px;
+           text-align: center;
+               
+        }
+    
+        .itemOnglets a{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-weight: bold;
+    
+        }
 
 /************************************5-  MEDIA QUERIES ******************************************************/
 
@@ -530,9 +846,93 @@ display:unset;
 
 /*FIN HEADER + NAVIGATION*/
 
+/*************MQ Spécique accueil******************/
+ /*Section vente-loc*/
+
+ #saleOrLoc{
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    }
+    
+    .saleOrLocCard{
+        width: 45%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+    
+    .saleOrLocCard h2{
+        
+        
+        max-width: 80%;
+        margin: 5% auto;
+        
+        }
+    
+    .saleOrLocCard p{
+        
+        color: #FFFFFF;
+        max-width: 80%;
+        margin: 10px auto;
+        
+        }
+    
+        /*Fin Section vente-loc*/
 
 
 
+/*Section new cars*/
+
+
+
+#carsWrapper{
+    
+    flex-direction: row;
+    gap: 20px;
+    justify-content:space-around;
+    
+    }
+
+.cardCars{
+width: 30%;
+
+}
+
+.cardCarsInfo{
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.priceTag{margin-right: 10px;}
+
+/*Fin section new cars*/        
+
+
+    /*Section pourquoi nous*/
+
+    #whyUsWrapper{
+        
+        flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+        
+        }
+
+    /*Fin section pourquoi nous*/
+
+    /*Section conclusion*/
+    #conclusion article {
+
+        margin-left: 15%;
+
+
+    }
+
+    /*Section conclusion*/
+
+    /*************Fin MQ Spécique accueil******************/
 
 /*FOOTER*/
 #footerInfo{
@@ -552,6 +952,52 @@ gap: 20px;
 
 
 
+/***********MQ Page contact*****************/
+#contactForm{
+    display: grid;
+    grid-template-areas:"title title title" 
+                        "inputs inputs textarea"
+                         "inputs inputs textarea"
+                        "button button button"   ;
+
+
+    }
+
+    #contactForm p{
+grid-area: title;
+font-size: 2.5em;
+
+    }
+
+    #contactForm input[type=submit]{
+        grid-area: button;
+        justify-self: center;
+    }
+
+    #inputsWrapper{
+grid-area: inputs;
+display: contents;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 2%;
+
+
+    }
+
+    #messageBox{
+grid-area: textarea;
+
+    }
+
+/***********Fin MQ Page contact*****************/
+
+/**************MQ Single car**********************/
+#onglets{
+    flex-direction: row;
+        
+    }
+
+/*Fin MQ Single car*/
 
 
 
