@@ -2,7 +2,7 @@
 Structure fichier CSS :
 
 1- Css commun
-2- Spécifique index
+2- Spécifique Accueil
 3- Spécifique Contact
 4- Spécifique singlecar
 5- Media queries
@@ -37,6 +37,11 @@ color: var(--ClubAutoBlanc);
 
 .blueTouch{
 color: var(--ClubAutoBleu);
+
+}
+
+.brownTouch{
+color: var(--ClubAutoMarron);
 
 }
 
@@ -109,7 +114,7 @@ header h1{
     padding-left: 3.5vw;
     padding-bottom: 20px;
     margin-bottom: auto;
-    color:var(--ClubAutoMarron);
+    color: var(--ClubAutoBlanc);
 }
 
 #headInfos{
@@ -193,6 +198,54 @@ flex-direction: column;
 
 /*Fin header*/
 
+
+/*NAVIGATION*/
+#wrapMenu{
+    display: none;
+    flex-direction: column;
+position: absolute;
+width: 100%;
+height: 100vh;
+top: 80px;
+background-color: #232628;
+gap: 10px;
+transition: display .5s;
+font-weight: bold;
+font-size: 1.2em;
+
+
+}
+
+#wrapMenu li{
+list-style: none;
+text-decoration: none;
+border-bottom: 1px solid #CC6119;
+border-left: 2px solid #CC6119;
+padding: 10px;
+margin: 10px;
+
+
+}
+
+#wrapMenu li a{
+    display: inline-block;
+    padding: .75em 1em;
+text-decoration: none;
+width: 100%;
+
+
+}
+
+.menuToggle{
+display: none;
+
+}
+
+
+
+/*FIN NAVIGATION*/
+
+
 /*Footer*/
 footer{
     width: 100%;
@@ -273,7 +326,7 @@ justify-content: center;
 /*Fin Footer*/
 
 
-/************************************2- SPECIFIQUE INDEX******************************************************/
+/************************************2- SPECIFIQUE Accueil******************************************************/
 
 
 #presentation{
@@ -386,10 +439,96 @@ height: 6vh;
 
 @media screen and (min-width: 768px) {
 
+/*HEADER + NAVIGATION*/
+
+.mobileMenu{
+        
+    display: none;
+    
+    
+    
+    }    
+
+    #mainTitle, #adress, #horaires, #headerSocials{
+        display: unset;
+        
+        }
+
+    #headInfos{
+
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) auto;
+        justify-items: start;
+        align-items: start;
+        color: #FFFFFF;
+        
+        }
+
+        #adress.iconTextGrid{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: start;
+            
+            
+            }
+            
+            #adress.iconTextGrid p{
+                margin-top: 0;
+                margin-left: 2px;   
+                }
+                
+            
+            
+            #adress.iconTextGrid div{
+            
+                display: flex;
+                flex-direction: column;
+                
+                
+                }
+
+    #wrapMenu{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background-color: #ECEFF3;
+        height: 5vh;
+        justify-content: flex-end;
+        align-content: center;
+        flex-wrap: wrap;
+        font-weight: bolder;
+        margin-bottom: 0;
+    width: auto;
+        
+        }
 
 
+        #wrapMenu li{
+            font-size: 1em;
+            border: none;
+            display: unset;
+            margin: unset;
 
 
+        }
+
+        #wrapMenu li a {
+            text-decoration: none;
+            align-self: center;
+            color: var(--ClubAutoNoir);
+           
+        }
+
+#mainImg{
+display:unset;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+
+}
+
+/*FIN HEADER + NAVIGATION*/
 
 
 
