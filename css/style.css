@@ -8,10 +8,6 @@ Structure fichier CSS :
 5- Media queries
 */
 
-
-
-
-
 /************************************1- CSS COMMUN*********************************************************/
 
 :root{
@@ -49,6 +45,11 @@ color: var(--ClubAutoMarron);
 
 .isBold{
 font-weight: bolder;
+
+}
+
+.isBigger{
+font-size: 1.5em;
 
 }
 
@@ -112,9 +113,11 @@ background-color: var(--ClubAutoNoir);
 
 header h1{
     padding-left: 3.5vw;
+    margin-top: 0;
     padding-bottom: 20px;
     margin-bottom: auto;
     color: var(--ClubAutoBlanc);
+    font-size: 3em;
 }
 
 #headInfos{
@@ -185,6 +188,9 @@ header h1{
                 margin: 5px;
             }
         
+            #tel p{
+                text-transform: uppercase;
+                            }
 
 .flexContCol{
 display: flex;
@@ -330,11 +336,11 @@ justify-content: center;
 
 /*Section présentation*/
 #presentation{
+    width: 90%;
     max-width: 950px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    /*display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     color: var(--ClubAutoNoir);
     }
     
@@ -342,21 +348,34 @@ justify-content: center;
     height: 100%;    
     display: grid;
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+
+    /*display: flex;
+    flex-direction: column;*/
+
+
     
     }
     
     .cardText{
     height: auto;
     }
+
+ 
     
     
-    
-    #presentation article img{
+    .presentationImg{
     width: 100%;
     align-self: center;
     
     }
-    
+
+    .check{
+        margin-right: 15px;
+    }
+
     #mainImg{
         display: none;
     }
@@ -847,6 +866,18 @@ display:unset;
 /*FIN HEADER + NAVIGATION*/
 
 /*************MQ Spécique accueil******************/
+
+/*Section présentation*/
+
+#presentation article{
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr;
+
+
+}
+
+/*Fin Section présentation*/
+
  /*Section vente-loc*/
 
  #saleOrLoc{
