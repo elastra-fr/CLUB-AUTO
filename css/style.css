@@ -721,6 +721,12 @@ font-size: 0.75em;
     text-decoration: underline;
   }
 
+  #carSubContent{
+    width: 90%;
+    margin: 0 auto;
+    color: var(--ClubAutoNoir);
+  }
+
 /*Fin breadcrumbs*/
 
 
@@ -739,11 +745,16 @@ font-size: 0.75em;
     
         }
     
-        .singleCarWrapper img, nav{
+        /*.singleCarWrapper img, nav{
             width: 100%;
             
                 }
-    
+    */
+        #singleCarImg{
+            width: 90%;
+            margin: 15px auto;
+        }
+
         #onglets{
             display: flex;
             flex-direction: column;
@@ -768,6 +779,14 @@ font-size: 0.75em;
     color:#FFFFFF;
     font-weight: bold;
     
+        }
+
+       #quote{
+color:var(--ClubAutoGris);
+font-style: italic;
+padding-left: 30px;
+border-left: 5px solid var(--ClubAutoMarron);
+
         }
 
 /************************************5-  MEDIA QUERIES ******************************************************/
@@ -1027,6 +1046,8 @@ grid-area: textarea;
     flex-direction: row;
         
     }
+
+    
 
 /*Fin MQ Single car*/
 
