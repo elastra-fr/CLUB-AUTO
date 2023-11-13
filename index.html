@@ -17,7 +17,7 @@
 
 <!--header-->
 <header class="genericContainer">
-    <a id="toggleButtonMenu" class="mobileMenu" href="#"><img src="images/hamburger.svg" alt=""></a>
+    <a id="toggleButtonMenu" class="mobileMenu" href="#"><svg width="80px" height="80px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#ECEFF3"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#ECEFF3"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#ECEFF3"/></svg></a>
     <div id="headInfos">
     <div id="mainTitle"><a href="index.html"><h1>CLUB AUTO</h1></a></div>
     <div id="adress" class="iconTextGrid"><img src="images/icone-adresse.png" alt="Icone adresse"><p><span class="brownTouch isBold">Adresse : </span><br/>AVENUE CHARLES DE GAULLE<br/>75000 PARIS</p></div>
@@ -34,10 +34,10 @@
 <!--Début navigation-->
 <nav>
     <ul id="wrapMenu">
-    <li><a href="index.html">ACCUEIL</a></li>
-    <li><a href="#">VENTE</a></li>
-    <li><a href="#">LOCATION</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
+    <li><a class="isBold" href="index.html">ACCUEIL</a></li>
+    <li><a class="isBold" href="#">VENTE</a></li>
+    <li><a class="isBold" href="#">LOCATION</a></li>
+    <li><a class="isBold" href="contact.html">CONTACT</a></li>
     </ul>
     
     </nav>
@@ -64,8 +64,8 @@
     <img class="presentationImg" src="images/clients.jpg" alt="Des clients heureux devant un véhicule de la marque" title="Des clients heureux devant un véhicule de la marque" loading="lazy">
     <div class="cardText">
 <h2>BIENVENUE CHEZ <span class="brownTouch">CLUB AUTO</span></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac orci scelerisque, ornare turpis at, sollicitudin odio. Mauris gravida purus massa, quis bibendum leo posuere at. Cras mattis sapien non molestie vulputate. Nunc et nunc pellentesque massa vestibulum sollicitudin sollicitudin eleifend nulla. Donec ullamcorper, odio at hendrerit rutrum, ipsum risus ultricies nisi, quis scelerisque massa sem ac magna. Nullam risus dui, scelerisque ac tincidunt et, commodo eget mi. Fusce mauris ex, pretium at tellus nec, blandit interdum magna. Nunc pretium felis a dolor vulputate, in fermentum lectus molestie. Cras ut dictum risus. Maecenas eleifend rhoncus odio, non tristique neque venenatis et. Quisque id turpis dictum, luctus arcu quis, laoreet felis.</p>   
+<p class="isBold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac orci scelerisque, ornare turpis at, sollicitudin odio. Mauris gravida purus massa, quis bibendum leo posuere at. Cras mattis sapien non molestie vulputate. Nunc et nunc pellentesque massa vestibulum sollicitudin sollicitudin eleifend nulla. Donec ullamcorper, odio at hendrerit rutrum, ipsum risus ultricies nisi, quis scelerisque massa sem ac magna.</p>   
 
 
 </div>
@@ -124,7 +124,6 @@
 <section id="newCars">
 
 <div class="decoTitle"><h2 class="whiteTouch">VEHICULES RECENTS</h2></div>
-<hr/>
 
 <div id="carsWrapper">
 <article class="cardCars"><a href="singleCar.html"><img src="images/vehicule2.jpg" alt="" loading="lazy"><div class="cardCarsInfo"><p><span class="whiteTouch">BMW 535I, NAVI, LEATHER, ABS</span></p><div class="priceTag">5 500 €</div></div></a></article>
@@ -156,7 +155,7 @@
 <!--DEBUT CONCLUSION-->
 <section id="conclusion" >
 
-<article>
+<article class="saleOrLocCard locCard">
 <h2><a href="index.html">CLUB AUTO</a><br/><span>VENTE ET LOCATION</span></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et mi pharetra, condimentum ipsum ac, posuere tortor. Praesent interdum, dui sit amet egestas aliquet, orci ipsum cursus massa, sed eleifend orci leo vestibulum nisi. Donec finibus nibh sed augue porta blandit. Cras finibus mi eu augue dignissim dignissim.</p>
 
@@ -198,7 +197,7 @@
     
     <div class="info">
         <h4 class="whiteTouch isBold">NEWSLETTER</h4>
-        <div class="newsLetter"><input type="text" placeholder="Entrez votre email"><a><img src="images/rss.png" alt="Icone flux Rss" title="Icone flux rss"></a>
+        <div class="newsLetter"><input type="text" placeholder="Entrez votre email"><a href="#"><img src="images/rss.png" alt="Icone flux Rss" title="Icone flux rss"></a>
         </div><p>Inscrivez-vous pour recevoir les dernières offres</p>
 </div>
         

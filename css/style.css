@@ -87,8 +87,12 @@ ul{
     list-style: none;
 }
 
+input, button, textarea{
+font-size: inherit;
 
+}
 /*Container flex, bg black*/
+
 .genericContainer{
 background-color: var(--ClubAutoNoir);
 
@@ -103,13 +107,19 @@ background-color: var(--ClubAutoNoir);
     
     }    
     
-    .mobileMenu img{
+    .mobileMenu svg{
         
         
         margin-top: 30px;
+        margin-right: 15px;
         width: 50px;
-    
-    }
+        }
+
+    .mobileMenu:hover >svg path{
+fill: var(--ClubAutoMarron);
+    }    
+
+
 
 header h1{
     padding-left: 3.5vw;
@@ -150,6 +160,7 @@ header h1{
     #headInfos div a svg{
         width: 30px;
         height: 30px;
+        transition: fill 0.5s;
         }
 
         #headInfos div a:hover > svg{
@@ -220,12 +231,13 @@ flex-direction: column;
 
 /*NAVIGATION*/
 #wrapMenu{
-    display: none;
+    display: flex;
     flex-direction: column;
 position: absolute;
 width: 100%;
 height: 100vh;
 top: 80px;
+left: -1000px;
 background-color: #232628;
 gap: 10px;
 transition: display .5s;
@@ -246,14 +258,25 @@ margin: 10px;
 
 }
 
+#wrapMenu li:hover > a{
+    color: var(--ClubAutoMarron);
+   
+       
+    }
+
+
 #wrapMenu li a{
     display: inline-block;
     padding: .75em 1em;
 text-decoration: none;
 width: 100%;
+color: var(--ClubAutoBlanc);
+transition: color 0.5s;
 
 
 }
+
+
 
 .menuToggle{
 display: none;
@@ -269,7 +292,6 @@ display: none;
 footer{
     width: 100%;
     margin :0 auto;
-    margin-top: 20px;
     display: grid;
     grid-template-rows: auto auto;
 }
@@ -291,6 +313,11 @@ width: 98%;
 display: flex;
 flex-direction: column;
 margin: 15px auto;
+}
+
+.info p{
+margin-top: 0;
+
 }
 
 #mention{
@@ -345,6 +372,7 @@ justify-content: center;
     .socials a svg{
         width: 25px;
         height: 25px;
+        transition: fill 0.5s;
              
         }
 
@@ -362,7 +390,7 @@ justify-content: center;
 #presentation{
     width: 90%;
     max-width: 950px;
-    margin: 0 auto;
+    margin: 25px auto;
     /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     color: var(--ClubAutoNoir);
@@ -374,6 +402,7 @@ justify-content: center;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
     gap: 20px;
+    margin: 20px;
 
 
     /*display: flex;
@@ -500,8 +529,17 @@ margin: 0 auto;
     background-color: #232628;
     font-weight: bold;
     margin-bottom: 20px;
+    height: 110px;
     
     
+    }
+
+    .cardCarsInfo hr{
+        width: 90%;
+        margin: 5px auto;
+        border: 2px solid var(--ClubAutoGris);
+
+
     }
 
     .cardCarsInfo p{
@@ -550,8 +588,9 @@ width: 100%;
 margin: 0 auto;
 }
 
-#whyUs h2{
+#whyUs h2, h3{
     align-self: center;
+    color: var(--ClubAutoNoir);
 
 }
 
@@ -619,13 +658,14 @@ max-width: 80%;
 
 #conclusion{
         
-    max-width: 950px;
+
     margin: 0 auto;
     background-image: url("../images/vehicule3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
     display: flex;
+    
     
 
 }
@@ -895,7 +935,15 @@ border-left: 5px solid var(--ClubAutoMarron);
             border: none;
             display: unset;
             margin: unset;
+         
 
+
+        }
+
+        #wrapMenu li a:hover{
+            border: none;
+            color: var(--ClubAutoBlanc);
+            background-color: var(--ClubAutoMarron);
 
         }
 
@@ -903,6 +951,7 @@ border-left: 5px solid var(--ClubAutoMarron);
             text-decoration: none;
             align-self: center;
             color: var(--ClubAutoNoir);
+            transition: color 0.7s, background-color 0.5s ;
            
         }
 
