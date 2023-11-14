@@ -29,7 +29,7 @@ Structure fichier CSS :
 --ClubAutoMaxWidth:1366px;
 --ClubAutoInnerWidth:1200px;
 
-
+scroll-behavior: smooth;
 
 
 }
@@ -109,6 +109,11 @@ background-color: var(--ClubAutoNoir);
 
 
 /*Header*/
+
+header{
+
+
+}
 
 .mobileMenu{
     float: right;
@@ -233,6 +238,7 @@ flex-direction: column;
 
 #mainImg{
     display: none;
+    height: 35vh;
 }
 
 #contactImg{
@@ -261,7 +267,7 @@ gap: 10px;
 transition: display .5s;
 font-weight: bold;
 font-size: 1.2em;
-transition: left 1s;
+transition: left 0.8s;
 z-index: 900;
 
 }
@@ -736,6 +742,17 @@ color: var(--ClubAutoNoir);
 
 /************************************3- SPECIFIQUE CONTACT******************************************************/
 
+.mainTitleOtherPages{
+    font-size: 1.2em;
+    position: relative;
+    top: -85px;
+    height: 0;
+    
+    }
+
+    
+
+
         /*Formulaire*/
 
         #contactForm{
@@ -874,9 +891,15 @@ font-size: 0.75em;
     max-width: var(--ClubAutoInnerWidth);
     display: flex;
     flex-direction: column;
+    color: var(--ClubAutoNoir);
     
         }
     
+        .singleCarWrapper {
+margin-left: 35px;
+
+        }
+
         /*.singleCarWrapper img, nav{
             width: 100%;
             
@@ -894,23 +917,50 @@ font-size: 0.75em;
             width: 90%;
             margin: 0  auto;
             padding: 0;
-            justify-items: center;
     
     
         }
     
         .itemOnglets{
     
-           padding: 20px;
+        
            text-align: center;
+           background-color: var(--ClubAutoNoir);
+           transition: border-top 0.4s, background-color 0.5s;
+           display: flex;
+           margin: 0;
+           height: 60px;
+           justify-content: center;
+           align-items: center;
+    
                
         }
+
+        .itemOnglets:hover{
+            border-top: 4px solid var(--ClubAutoMarron);
+            background-color: var(--ClubAutoGris);
+            cursor: pointer;
+           
+                   
+         }
+         
+
+         .itemOnglets:hover>a{
+            color:var(--ClubAutoNoir);
+
+         }
     
         .itemOnglets a{
     text-decoration: none;
     color:#FFFFFF;
     font-weight: bold;
-    
+    transition: color 0.7s;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ 
         }
 
        #quote{
@@ -918,6 +968,7 @@ color:var(--ClubAutoGris);
 font-style: italic;
 padding-left: 30px;
 border-left: 5px solid var(--ClubAutoMarron);
+color:grey;
 
         }
 
@@ -927,12 +978,17 @@ border-left: 5px solid var(--ClubAutoMarron);
 
 /*HEADER + NAVIGATION*/
 
+
+
+
+
 .mobileMenu{
         
     display: none;
     
     
     }    
+
 
     #mainTitle, #adress, #horaires, #headerSocials{
         display: unset;
@@ -1067,13 +1123,17 @@ margin-right: 83px;
 #mainImg{
 display:unset;
     width: 100%;
-    height: 45vh;
+    /*height: 45vh;*/
     object-fit: cover;
     object-position: 50% 33%;
     grid-row: 1;
     grid-column: 1;
+    transition: height 1s ease ;
+
 
 }
+
+
 
 /*FIN HEADER + NAVIGATION*/
 
@@ -1197,6 +1257,23 @@ gap: 20px;
 
 
 /***********MQ Page contact*****************/
+
+.mainTitleOtherPages{
+font-size: 1em;    
+align-self: center;
+position: unset;
+height: unset;
+
+    
+
+}
+
+.mainTitleOtherPages h1{
+margin-left: 0;
+padding-left: 0;
+
+}
+
 #contactContent{
 
     height: 50vh;
@@ -1259,9 +1336,20 @@ grid-area: textarea;
 /***********Fin MQ Page contact*****************/
 
 /**************MQ Single car**********************/
+#mainSingleCar{
+    max-width: 60%;
+    margin-left: 83px;
+    
+        }
+
 #onglets{
     flex-direction: row;
+    justify-content: space-around;
         
+    }
+
+    .itemOnglets{
+        width: 100%;
     }
 
     

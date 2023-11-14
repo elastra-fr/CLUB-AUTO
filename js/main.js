@@ -1,6 +1,10 @@
 console.log("ok js");
 
+//
 
+
+
+//
 const bt = document.getElementById("toggleButtonMenu");
 const el=document.getElementById("wrapMenu");
 
@@ -84,45 +88,74 @@ switch(onglet)
 
   case "btTech":
 
-  htmlIn=``;
+  htmlIn=`<dl>
+  <dt class="isBold">Lorem ipsum dolor sit amet</dt>
+  <dd>
+  Morbi risus dolor, tempor in dignissim ut.
+  </dd>
+<br>
+  <dt class="isBold">Lorem ipsum dolor sit amet</dt>
+  <dd>
+  Pellentesque condimentum viverra suscipit
+  </dd>
+  <br>
+  <dt class="isBold">Lorem ipsum dolor sit amet</dt>
+  <dd>Sed sit amet tellus mauris. Aliquam faucibus auctor diam, non pellentesque ex venenatis at.e</dd>
+  <br>
+  <dt class="isBold">Lorem ipsum dolor sit amet</dt>
+  <dd>
+  In lobortis iaculis eros et vestibulum.
+  </dd>
+  </dl>
+`;
 
   break;
 
 
   case "btOpt":
 
-  htmlIn=``;
-
-  break;
-
-  case "btCont":
-
   htmlIn=`
-  <form id="contactForm">
+  <h3>INTERIEUR</h3>
+  <ul>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  </ul>
 
-<p>CONTACTEZ NOUS</p>
-
-<div id="inputsWrapper">
-<div class="inputBox"><label for="prenom">Prénom*</label><input name="prenom" type="text" placeholder="Entrez votre nom" required/></div>
-<div class="inputBox"><label for="nom">Nom*</label><input name="nom" type="text" placeholder="Entrez votre nom" required/></div>
-
-
-
-
-
-<div class="inputBox"><label for="email">Email*</label><input name="email" type="email" placeholder="Entrez une adresse mail valide" required/></div>
-<div class="inputBox"><label for="tel">Téléphone</label><input name="tel" type="tel" placeholder="Numéro de téléphone"/></div>
-</div>
-
-<div id="messageBox" class="inputBox"><label for="message">Message</label><textarea name="message" placeholder="Ecrivez votre message" required></textarea></div>
-
-<input type="submit"/>
-
-</form>
+  <h3>EXTERIEUR</h3>
+  <ul>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  </ul>`;
   
-  `;
-
   break;
+
+  default:
+
+
+  
+
+  window.location.href = 'contact.html';
+
   
 
 }
