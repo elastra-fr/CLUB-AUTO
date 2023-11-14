@@ -19,11 +19,19 @@ Structure fichier CSS :
 --ClubAutoRouge:#FF4848;
 --ClubAutoMarron:#CC6119;
 --ClubAutoGris:#ECEFF3;
+--ClubAutoGrisTransp:rgba(236, 239, 243, 0.6);
 --ClubAutoNoir:#232628;
 --ClubAutoBleu:#6C98E1;
 
 --ClubAutoTexte: 'Open Sans', sans-serif;
 --ClubAutoTitres: 'Montserrat', sans-serif;
+
+--ClubAutoMaxWidth:1366px;
+--ClubAutoInnerWidth:1200px;
+
+
+
+
 }
 
 /*Coloration ponctuelle texte*/
@@ -49,7 +57,7 @@ font-weight: bolder;
 }
 
 .isBigger{
-font-size: 1.5em;
+font-size: 1.25em;
 
 }
 
@@ -63,7 +71,7 @@ html {
   }
 
 body{
-max-width: 1366px;
+max-width:var(--ClubAutoMaxWidth);
 margin: 0 auto;
 font-family: var(--ClubAutoTexte);
 color:var(--ClubAutoGris);
@@ -89,6 +97,7 @@ ul{
 
 input, button, textarea{
 font-size: inherit;
+font-family: var(--ClubAutoTexte);
 
 }
 /*Container flex, bg black*/
@@ -127,7 +136,7 @@ header h1{
     padding-bottom: 20px;
     margin-bottom: auto;
     color: var(--ClubAutoBlanc);
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #headInfos{
@@ -226,6 +235,16 @@ flex-direction: column;
     display: none;
 }
 
+#contactImg{
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    object-fit: cover;
+    content: 50% 50%;
+    height: 300px;
+    
+}
+
 /*Fin header*/
 
 
@@ -243,6 +262,7 @@ transition: display .5s;
 font-weight: bold;
 font-size: 1.2em;
 transition: left 1s;
+z-index: 900;
 
 }
 
@@ -402,7 +422,6 @@ justify-content: center;
 /*Section présentation*/
 #presentation{
     width: 90%;
-    max-width: 950px;
     margin: 25px auto;
     /*display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
@@ -452,7 +471,7 @@ justify-content: center;
     /*Section vente ou location*/
 
     #saleOrLoc{
-        max-width: 950px;
+        max-width: var(--ClubAutoMaxWidth);
         margin: 0 auto;
         background-image: url("../images/vente-location.jpg");
         background-size: cover;
@@ -504,7 +523,7 @@ justify-content: center;
 
     /*Section véhicules récents*/
 #newCars{
-    max-width: 950px;
+    max-width: var(--ClubAutoMaxWidth);
 background-color: black;
 display: flex;
 flex-direction: column;
@@ -531,9 +550,13 @@ gap: 20px;
 .cardCars{
 width: 95vw;
 margin: 0 auto;
-
-
 }
+
+.cardCars a:hover>div{
+    border:2px solid var(--ClubAutoBleu);
+       
+    }
+
 
 .cardCarsInfo{
     width: 100%;
@@ -547,6 +570,7 @@ margin: 0 auto;
     
     }
 
+  
     .cardCarsInfo hr{
         width: 90%;
         margin: 5px auto;
@@ -594,7 +618,7 @@ width: 100%;
 /*Section Pourquoi nous ?*/
 
 #whyUs{
-    max-width: 950px;
+    max-width: var(--ClubAutoInnerWidth);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -715,21 +739,25 @@ color: var(--ClubAutoNoir);
         /*Formulaire*/
 
         #contactForm{
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color:var(--ClubAutoBlanc);
             color: var(--ClubAutoNoir);
-            width: 65vw;
+            width: 80%;
             margin: 0 auto;
-            padding: 6vw 6vw;
+            padding: 15px;
             gap: 25px;
+            position: relative;
+            top: -10vh;
+            z-index: 800;
             }
 
         #contactContent{
             background-color: #ECEFF3;
-            background-image: url("../images/vehicule3.jpg");
+            height: 90vh;
+           /* background-image: url("../images/vehicule3.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            
+            */
                         }
 
                         #inputsWrapper{
@@ -741,7 +769,7 @@ gap: 25px;
 #contactForm p{
 font-weight: bold;
 font-size: 2.5em;
-
+font-family: var(--ClubAutoTitres);
 
 }
 
@@ -756,6 +784,21 @@ font-size: 2.5em;
     text-align: center;
     border: none;
     }
+
+    #contactForm input[type=submit]:hover{
+
+        background-color: var(--ClubAutoMarron);
+        color: var(--ClubAutoNoir);
+        cursor: pointer;
+        
+
+        }
+
+   #buttonBox{
+    grid-area: button;
+   display: flex;
+   justify-content: center;
+   }
 
 .flexContCol label{
 font-weight: bold;
@@ -773,6 +816,7 @@ height: 6vh;
     background-color: #ECEFF3;
     border:none;
     height: 20vh;
+    width: 100%;
     }
 
 
@@ -784,7 +828,7 @@ height: 6vh;
 /*Breadcrumbs*/
 
 .breadcrumbs{
-    max-width: 950px;
+    max-width: var(--ClubAutoInnerWidth);
 display: flex;
 border-bottom :#ECEFF3 1px solid ;
 align-content: flex-start;
@@ -819,7 +863,7 @@ font-size: 0.75em;
 
 
 #mainSingleCar{
-    max-width: 950px;
+    max-width: var(--ClubAutoInnerWidth);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -827,7 +871,7 @@ font-size: 0.75em;
         }
     
         .singleCarWrapper{
-    max-width: 800px;
+    max-width: var(--ClubAutoInnerWidth);
     display: flex;
     flex-direction: column;
     
@@ -888,7 +932,6 @@ border-left: 5px solid var(--ClubAutoMarron);
     display: none;
     
     
-    
     }    
 
     #mainTitle, #adress, #horaires, #headerSocials{
@@ -896,15 +939,33 @@ border-left: 5px solid var(--ClubAutoMarron);
         
         }
 
-    #headInfos{
+        #mainTitle {
+
+            align-self: center;
+         
+        }
+
+        #mainTitle h1{
+
+            align-self: center;
+            margin-left: 0;
+            padding-left: 0;
+
+
+        }
 
         
+
+    #headInfos{
+
+        max-width: var(--ClubAutoInnerWidth);
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: 1.5fr repeat(4, 1fr);
         justify-items: start;
         align-items: start;
         color: #FFFFFF;
         gap: 15px;
+        margin: 0 auto;
         
         }
 
@@ -938,18 +999,37 @@ border-left: 5px solid var(--ClubAutoMarron);
 
                 }
 
+                .navImgGrid{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+
+                }
+
+                header nav{
+                background-color: var(--ClubAutoGrisTransp);
+                grid-column: 1;
+                grid-row: 1;
+                z-index: 999;           
+                margin-top: 0;
+                height: fit-content;
+}
+
+
+
     #wrapMenu{
         position: static;
         display: flex;
         flex-direction: row;
-        background-color: #ECEFF3;
+        background-color: var(--ClubAutoGrisTransp);
         height: 5vh;
         justify-content: flex-end;
-        align-content: center;
+        align-content:center;
         flex-wrap: wrap;
         font-weight: bolder;
         margin-bottom: 0;
     width: auto;
+    margin-top: 0;
         
         }
 
@@ -958,9 +1038,14 @@ border-left: 5px solid var(--ClubAutoMarron);
             font-size: 1em;
             border: none;
             display: unset;
-            margin: unset;
-         
+            margin: 0;
+            padding: 0;
+            min-width: 10%;
+            text-align: center;    
+        }
 
+        #wrapMenu li:last-child{
+margin-right: 83px;
 
         }
 
@@ -982,8 +1067,11 @@ border-left: 5px solid var(--ClubAutoMarron);
 #mainImg{
 display:unset;
     width: 100%;
-    height: 60vh;
+    height: 45vh;
     object-fit: cover;
+    object-position: 50% 33%;
+    grid-row: 1;
+    grid-column: 1;
 
 }
 
@@ -996,6 +1084,7 @@ display:unset;
 #presentation article{
 grid-template-rows: 1fr;
 grid-template-columns: 1fr 1fr;
+max-width: var(--ClubAutoInnerWidth);
 
 
 }
@@ -1091,7 +1180,7 @@ justify-content: space-between;
 
 /*FOOTER*/
 #footerInfo{
-    max-width: 950px;
+    max-width: var(--ClubAutoInnerWidth);
     margin: 0 auto;
     font-size: .9rem;
 grid-template-columns: repeat(4, 1fr);
@@ -1108,12 +1197,22 @@ gap: 20px;
 
 
 /***********MQ Page contact*****************/
+#contactContent{
+
+    height: 50vh;
+   /* background-image: url("../images/vehicule3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+                }
+
 #contactForm{
     display: grid;
     grid-template-areas:"title title title" 
                         "inputs inputs textarea"
                          "inputs inputs textarea"
-                        "button button button"   ;
+                        "void void button"   ;
 
 
     }
@@ -1139,10 +1238,23 @@ gap: 2%;
 
     }
 
+    .flexContCol textarea{
+       
+        height: 100%;
+        
+        }
+
     #messageBox{
 grid-area: textarea;
 
     }
+
+    #buttonBox{
+       
+       justify-content: start;
+       }
+
+  
 
 /***********Fin MQ Page contact*****************/
 

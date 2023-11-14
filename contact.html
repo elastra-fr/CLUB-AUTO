@@ -31,21 +31,18 @@
 
     
 <!--Début navigation-->
-<nav>
+<div class="navImgGrid">
+    <nav>
     <ul id="wrapMenu" class="hidden">
     <li><a class="isBold" href="index.html">ACCUEIL</a></li>
     <li><a class="isBold" href="#">VENTE</a></li>
     <li><a class="isBold" href="#">LOCATION</a></li>
     <li><a class="isBold" href="contact.html">CONTACT</a></li>
     </ul>
-    
     </nav>
-    
+    <img id="contactImg" src="images/vehicule3.jpg" alt="Des véhicules soigneusement alignés sur un parking" title="Des véhicules soigneusement alignés sur un parking">
     <!--Fin navigation-->
-
-<img id="mainImg" src="images/vehicule1.jpg" alt="Des véhicules soigneusement alignés sur un parking" title="Des véhicules soigneusement alignés sur un parking">
-<a href="#"><h1>CLUB AUTO <span class="brownTouch">LE MEILLEUR DE L'AUTOMOBILE</span></h1></a> 
-
+</div>
 
 </header>
 
@@ -57,7 +54,7 @@
 
 <form id="contactForm" class="flexContCol">
 
-<p>CONTACTEZ NOUS</p>
+<p class="isBold">CONTACTEZ NOUS</p>
 
 <div id="inputsWrapper" class="flexContCol">
 <div class="flexContCol"><label for="prenom">Prénom*</label><input id="prenom" name="prenom" type="text" placeholder="Entrez votre nom" required/></div>
@@ -73,7 +70,7 @@
 
 <div id="messageBox" class="flexContCol"><label for="message">Message</label><textarea id="message" name="message" placeholder="Ecrivez votre message" required></textarea></div>
 
-<div>
+<div id="buttonBox">
 <input type="submit"/>
 </div>
 </form>
