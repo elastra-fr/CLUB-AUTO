@@ -57,7 +57,7 @@ font-weight: bolder;
 }
 
 .isBigger{
-font-size: 1.25em;
+font-size: 1.5em;
 
 }
 
@@ -100,18 +100,11 @@ font-size: inherit;
 font-family: var(--ClubAutoTexte);
 
 }
-/*Container flex, bg black*/
-
-.genericContainer{
-background-color: var(--ClubAutoNoir);
-
-}
-
 
 /*Header*/
 
 header{
-
+    background-color: var(--ClubAutoNoir);
 
 }
 
@@ -137,7 +130,7 @@ fill: var(--ClubAutoMarron);
 
 header h1{
     padding-left: 3.5vw;
-    margin-top: 0;
+    
     padding-bottom: 20px;
     margin-bottom: auto;
     color: var(--ClubAutoBlanc);
@@ -152,7 +145,7 @@ header h1{
     grid-template-columns: 1fr;
     justify-items: start;
     align-items: start;
-    color: #FFFFFF;
+    color: var(--ClubAutoGris);
     }
     
     #mainTitle, #adress, #horaires, #headerSocials{
@@ -262,7 +255,7 @@ position: absolute;
 width: 100%;
 height: 100vh;
 top: 80px;
-background-color: #232628;
+background-color: var(--ClubAutoNoir);
 gap: 10px;
 transition: display .5s;
 font-weight: bold;
@@ -284,8 +277,8 @@ left: -1000px;
 #wrapMenu li{
 list-style: none;
 text-decoration: none;
-border-bottom: 1px solid #CC6119;
-border-left: 2px solid #CC6119;
+border-bottom: 1px solid var(--ClubAutoMarron);
+border-left: 2px solid var(--ClubAutoMarron);
 padding: 10px;
 margin: 10px;
 
@@ -328,6 +321,7 @@ footer{
     margin :0 auto;
     display: grid;
     grid-template-rows: auto auto;
+    background-color: var(--ClubAutoNoir);
 }
 
 
@@ -477,7 +471,7 @@ justify-content: center;
     /*Section vente ou location*/
 
     #saleOrLoc{
-        max-width: var(--ClubAutoMaxWidth);
+        max-width: 100%;
         margin: 0 auto;
         background-image: url("../images/vente-location.jpg");
         background-size: cover;
@@ -504,12 +498,13 @@ justify-content: center;
             
             max-width: 50%;
             margin: 5% auto;
+            color: var(--ClubAutoNoir);
             
             }
         
         .saleOrLocCard p{
             
-            color: #FFFFFF;
+            color: var(--ClubAutoBlanc);
             max-width: 50%;
             margin: 10px auto;
             
@@ -542,7 +537,7 @@ margin: 0 auto;
     justify-content: center;
     width: 90%;
     margin: 20px auto;
-    border-bottom:#CC6119 2px solid;
+    border-bottom:var(--ClubAutoMarron) 2px solid;
 
 }
 
@@ -568,7 +563,7 @@ margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    background-color: #232628;
+    background-color: var(--ClubAutoNoir);
     font-weight: bold;
     margin-bottom: 20px;
     height: 110px;
@@ -598,9 +593,9 @@ margin: 0 auto;
         margin-top: 1em;
         margin-left: 1em;
         padding: 10px;
-        background-color: #6C98E1;
+        background-color: var(--ClubAutoBleu);
         align-self: flex-start;
-        color: #FFFFFF;
+        color: var(--ClubAutoBlanc);
         font-weight: bold;
         font-size: 0.85em;
 
@@ -725,13 +720,13 @@ color: var(--ClubAutoNoir);
 }
 
 #conclusion article p{
-    color: #232628;
+    color: var(--ClubAutoNoir);
 
 }
 
 #conclusion article a{
     text-decoration: none;
-    color: #232628;
+    color: var(--ClubAutoNoir);
 
 
 }
@@ -763,13 +758,14 @@ color: var(--ClubAutoNoir);
             padding: 15px;
             gap: 25px;
             position: relative;
-            top: -10vh;
+            top: -13%;
             z-index: 800;
             }
 
         #contactContent{
             background-color: #ECEFF3;
-            height: 90vh;
+            height: auto;
+            display: grid;
            /* background-image: url("../images/vehicule3.jpg");
             background-size: cover;
             background-repeat: no-repeat;
@@ -791,11 +787,12 @@ font-family: var(--ClubAutoTitres);
 }
 
 #contactForm input[type=submit]{
-    color:#FFFFFF;
+    height: 60px;
+    color:var(--ClubAutoBlanc);
     font-weight: bold;
     font-size: 1.4em;
     padding: 15px 40px 15px 40px;
-    background-color: #6C98E1;
+    background-color: var(--ClubAutoBleu);
     text-decoration: none;   
     justify-self: stretch;
     text-align: center;
@@ -866,7 +863,7 @@ font-size: 0.75em;
 }
 
 .breadcrumbs li a:hover {
-    color:#232628;
+    color:var(--ClubAutoNoir);
     text-decoration: underline;
   }
 
@@ -913,7 +910,7 @@ margin-left: 35px;
         #onglets{
             display: flex;
             flex-direction: column;
-            background-color: #232628;
+            background-color: var(--ClubAutoNoir);
             width: 90%;
             margin: 0  auto;
             padding: 0;
@@ -952,7 +949,7 @@ margin-left: 35px;
     
         .itemOnglets a{
     text-decoration: none;
-    color:#FFFFFF;
+    color:var(--ClubAutoBlanc);
     font-weight: bold;
     transition: color 0.7s;
     display: flex;
@@ -974,8 +971,15 @@ color:grey;
 
 /************************************5-  MEDIA QUERIES ******************************************************/
 
+
+
 @media screen and (min-width: 768px) {
 
+    
+    .isBigger{
+        font-size: 1.45vw;
+        
+        }
 /*HEADER + NAVIGATION*/
 
 
@@ -1019,9 +1023,10 @@ color:grey;
         grid-template-columns: 1.5fr repeat(4, 1fr);
         justify-items: start;
         align-items: start;
-        color: #FFFFFF;
+        color: var(--ClubAutoBlanc);
         gap: 15px;
         margin: 0 auto;
+        font-size: 1.2vw;
         
         }
 
@@ -1078,7 +1083,7 @@ color:grey;
         display: flex;
         flex-direction: row;
         background-color: var(--ClubAutoGrisTransp);
-        height: 5vh;
+        height: 60px;
         justify-content: flex-end;
         align-content:center;
         flex-wrap: wrap;
@@ -1176,7 +1181,7 @@ max-width: var(--ClubAutoInnerWidth);
     
     .saleOrLocCard p{
         
-        color: #FFFFFF;
+        color: var(--ClubAutoBlanc);
         max-width: 80%;
         margin: 10px auto;
         
@@ -1250,6 +1255,11 @@ gap: 20px;
 
 }
 
+.info p{
+    font-size: 1.3vw;
+    
+    }
+
 
 
 /*FIN FOOTER*/
@@ -1276,7 +1286,7 @@ padding-left: 0;
 
 #contactContent{
 
-    height: 50vh;
+    height: auto;
    /* background-image: url("../images/vehicule3.jpg");
     background-size: cover;
     background-repeat: no-repeat;

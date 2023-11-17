@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vous souhaitez acheter ou louer un véhicule en région parisienne ? N'hésitez pas à nous contacter pour toute question ou demande.">
     <title>Contact - CLUB AUTO</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
 
 <body>
 <!--header-->
-<header class="genericContainer">
+<header>
     <a id="toggleButtonMenu" class="mobileMenu" href="#"><svg width="80px" height="80px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#ECEFF3"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#ECEFF3"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#ECEFF3"/></svg></a>
     <div id="headInfos">
     <div id="mainTitleContact" class="mainTitleOtherPages"><a href="index.html"><h1>CLUB AUTO</h1></a></div>
@@ -35,8 +36,8 @@
     <nav>
     <ul id="wrapMenu" class="hidden">
     <li><a class="isBold" href="index.html">ACCUEIL</a></li>
-    <li><a class="isBold" href="#">VENTE</a></li>
-    <li><a class="isBold" href="#">LOCATION</a></li>
+    <li title="Page non incluse dans le cahier des charges du projet"><a class="isBold" href="#">VENTE</a></li>
+    <li title="Page non incluse dans le cahier des charges du projet"><a class="isBold" href="#">LOCATION</a></li>
     <li><a class="isBold" href="contact.html">CONTACT</a></li>
     </ul>
     </nav>
@@ -57,21 +58,21 @@
 <p class="isBold">CONTACTEZ NOUS</p>
 
 <div id="inputsWrapper" class="flexContCol">
-<div class="flexContCol"><label for="prenom">Prénom*</label><input id="prenom" name="prenom" type="text" placeholder="Entrez votre nom" required/></div>
-<div class="flexContCol"><label for="nom">Nom*</label><input id="nom" name="nom" type="text" placeholder="Entrez votre nom" required/></div>
+<div class="flexContCol"><label for="prenom">Prénom*</label><input id="prenom" name="prenom" type="text" placeholder="Entrez votre nom" required autofocus tabindex="1"/></div>
+<div class="flexContCol"><label for="nom">Nom*</label><input id="nom" name="nom" type="text" placeholder="Entrez votre nom" required tabindex="2"/></div>
 
 
 
 
 
-<div class="flexContCol"><label for="email">Email*</label><input id= "email" name="email" type="email" placeholder="Entrez une adresse mail valide" required/></div>
-<div class="flexContCol"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" placeholder="Numéro de téléphone"/></div>
+<div class="flexContCol"><label for="email">Email*</label><input id= "email" name="email" type="email" placeholder="Entrez une adresse mail valide" required tabindex="3"/></div>
+<div class="flexContCol"><label for="telephone">Téléphone</label><input id="telephone" name="telephone" type="tel" placeholder="Numéro de téléphone" tabindex="4"/></div>
 </div>
 
-<div id="messageBox" class="flexContCol"><label for="message">Message</label><textarea id="message" name="message" placeholder="Ecrivez votre message" required></textarea></div>
+<div id="messageBox" class="flexContCol"><label for="message">Message</label><textarea id="message" name="message" placeholder="Ecrivez votre message" required tabindex="5"></textarea></div>
 
 <div id="buttonBox">
-<input type="submit"/>
+<input type="submit" tabindex="6"/>
 </div>
 </form>
 
@@ -87,7 +88,7 @@
 
 <!--DEBUT FOOTER-->
 
-<footer class="genericContainer">
+<footer>
     <div id="footerInfo">
         <div class="info">
             <h4 class="whiteTouch isBold"><span class="blueTouch">CLUB</span> AUTO</h4>
