@@ -79,6 +79,8 @@ color:var(--ClubAutoGris);
 
 }
 
+
+
 h1, h2, h3{
     font-family: var(--ClubAutoTitres);
 }
@@ -709,7 +711,7 @@ color: var(--ClubAutoNoir);
         
 
     margin: 0 auto;
-    background-image: url("../images/vehicule3.jpg");
+    background-image: url("../images/vehicule3.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
