@@ -111,8 +111,12 @@ header{
 }
 
 .mobileMenu{
-    float: right;
-    display: block;
+    /*float: right;
+    display: block;*/
+    position: fixed;
+    right: 10px;
+    top: -22px;
+    z-index: 1200;
     
     }    
     
@@ -137,6 +141,7 @@ header h1{
     margin-bottom: auto;
     color: var(--ClubAutoBlanc);
     font-size: 2em;
+    margin-top: auto;
 }
 
 #headInfos{
@@ -157,7 +162,7 @@ header h1{
     
     
     #headInfos div{
-    margin-top: 20px;
+    margin-top: 80px;
     
     }
     
@@ -742,7 +747,7 @@ color: var(--ClubAutoNoir);
 .mainTitleOtherPages{
     font-size: 1.2em;
     position: relative;
-    top: -85px;
+    top: -50px;
     height: 0;
     
     }
@@ -977,7 +982,16 @@ color:grey;
 
 @media screen and (min-width: 768px) {
 
-    
+    .isFixed{
+
+        position: fixed;
+        top: 5px;
+        max-width: var(--ClubAutoMaxWidth);
+        width: 100%;
+
+    }
+
+
     .isBigger{
         font-size: 1.45vw;
         
@@ -1031,6 +1045,11 @@ color:grey;
         font-size: 1.2vw;
         
         }
+
+        #headInfos div{
+            margin-top: 20px;
+            
+            }
 
         #adress.iconTextGrid{
             display: grid;
@@ -1369,5 +1388,25 @@ grid-area: textarea;
 /*Fin MQ Single car*/
 
 
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .isBigger{
+        font-size: 1.3em;
+        
+        }
+
+        #headInfos{
+
+        font-size: 1em;
+            
+            }
+
+            .info p{
+                font-size: 1em;
+                
+                }
 
 }

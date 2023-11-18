@@ -2,6 +2,28 @@ console.log("ok js");
 
 //
 
+var navEl=document.querySelector('nav');
+
+window.addEventListener("scroll", function(event) {
+  var top = this.scrollY,
+      left =this.scrollX;
+
+if(this.scrollY>=100)
+{
+
+  navEl.classList.add("isFixed");
+
+
+}
+
+else{
+
+  navEl.classList.remove("isFixed");
+}
+
+
+      console.log(this.scrollY);
+}, false);
 
 
 
