@@ -22,7 +22,7 @@ else{
 }
 
 
-      console.log(this.scrollY);
+      //console.log(this.scrollY);
 }, false);
 
 
