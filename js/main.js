@@ -2,57 +2,46 @@ console.log("ok js");
 
 //
 
-var navEl=document.querySelector('nav');
+var navEl = document.querySelector("nav");
 
-window.addEventListener("scroll", function(event) {
-  var top = this.scrollY,
-      left =this.scrollX;
+window.addEventListener(
+  "scroll",
+  function (event) {
+    var top = this.scrollY,
+      left = this.scrollX;
 
-if(this.scrollY>=100)
-{
+    if (this.scrollY >= 100) {
+      navEl.classList.add("isFixed");
+    } else {
+      navEl.classList.remove("isFixed");
+    }
 
-  navEl.classList.add("isFixed");
-
-
-}
-
-else{
-
-  navEl.classList.remove("isFixed");
-}
-
-
-      //console.log(this.scrollY);
-}, false);
-
-
-
+    //console.log(this.scrollY);
+  },
+  false
+);
 
 //
 const bt = document.getElementById("toggleButtonMenu");
-const el=document.getElementById("wrapMenu");
+const el = document.getElementById("wrapMenu");
 
-
-bt.addEventListener("click", function(){
-
- el.classList.toggle("visible");
-
+bt.addEventListener("click", function () {
+  el.classList.toggle("visible");
 });
-
 
 //Description véhicule
 
-const singleCont =document.getElementById("carSubContent");
+const singleCont = document.getElementById("carSubContent");
 
-if(singleCont){
-fillSubCont("btDesc");
-};
+if (singleCont) {
+  fillSubCont("btDesc");
+}
 
-const onglets=document.querySelectorAll("#onglets li a");
+const onglets = document.querySelectorAll("#onglets li a");
 console.log(onglets);
 
 onglets.forEach((btOnglet) => {
-  btOnglet.addEventListener('click', (e) => {
+  btOnglet.addEventListener("click", (e) => {
     e.preventDefault();
     console.log(btOnglet.id);
     fillSubCont(btOnglet.id);
@@ -68,25 +57,15 @@ fillSubCont(1);
 });
 */
 
+function fillSubCont(onglet) {
+  //console.log("auto ?");
 
-
-function fillSubCont(onglet)
-{
-
-//console.log("auto ?");
-
-  
-  singleCont.innerHTML="";
+  singleCont.innerHTML = "";
   var htmlIn;
 
-switch(onglet)
-{
-
-
-  case "btDesc":
-
-  
-  htmlIn=`
+  switch (onglet) {
+    case "btDesc":
+      htmlIn = `
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nibh neque. In at tortor sed lacus condimentum convallis ac sit amet dolor. Curabitur nulla nunc, pellentesque sed ultricies nec, dictum sed nulla.</p>
   
   <p>Aliquam quis tellus diam. Morbi risus dolor, tempor in dignissim ut, maximus at mi. In lobortis iaculis eros et vestibulum. Donec blandit hendrerit suscipit. Pellentesque condimentum viverra suscipit. Vivamus in faucibus libero. Sed sit amet tellus mauris. Aliquam faucibus auctor diam, non pellentesque ex venenatis at.Aliquam quis tellus diam. Morbi risus dolor, tempor in dignissim ut, maximus at mi. In lobortis iaculis eros et vestibulum. Donec blandit hendrerit suscipit. Pellentesque condimentum viverra suscipit. Vivamus in faucibus libero. Sed sit amet tellus mauris. Aliquam faucibus auctor diam, non pellentesque ex venenatis at.Aliquam quis tellus diam. Morbi risus dolor, tempor in dignissim ut, maximus at mi. In lobortis iaculis eros et vestibulum. Donec blandit hendrerit suscipit. Pellentesque condimentum viverra suscipit. Vivamus in faucibus libero. Sed sit amet tellus mauris. Aliquam faucibus auctor diam, non pellentesque ex venenatis at.</p>
@@ -99,20 +78,19 @@ switch(onglet)
   
   
   <ul>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
   </ul>
    
   
   `;
 
-  break;
+      break;
 
-  case "btTech":
-
-  htmlIn=`<dl>
+    case "btTech":
+      htmlIn = `<dl>
   <dt class="isBold">Lorem ipsum dolor sit amet</dt>
   <dd>
   Morbi risus dolor, tempor in dignissim ut.
@@ -133,61 +111,47 @@ switch(onglet)
   </dl>
 `;
 
-  break;
+      break;
 
-
-  case "btOpt":
-
-  htmlIn=`
+    case "btOpt":
+      htmlIn = `
   <h3>INTERIEUR</h3>
   <ul>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
   </ul>
 
   <h3>EXTERIEUR</h3>
   <ul>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
-  <li><img class="check" src="images/check.svg">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
+  <li><img class="check" src="images/check.svg" alt="">Lorem ipsum sit amet</li>
   </ul>`;
-  
-  break;
 
-  default:
+      break;
 
+    default:
+      window.location.href = "contact.html";
+  }
 
-  
-
-  window.location.href = 'contact.html';
-
-  
-
-}
-
-
-  singleCont.insertAdjacentHTML('beforeend', htmlIn);
-  
-  
-
-
+  singleCont.insertAdjacentHTML("beforeend", htmlIn);
 }
