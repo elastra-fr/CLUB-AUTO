@@ -32,12 +32,10 @@ if (singleCont) {
 }
 
 const onglets = document.querySelectorAll("#onglets li a");
-console.log(onglets);
 
 onglets.forEach((btOnglet) => {
   btOnglet.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(btOnglet.id);
     fillSubCont(btOnglet.id);
   });
 });
