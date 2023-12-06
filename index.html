@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style-min.css" />
 
 
 </head>
@@ -28,13 +28,12 @@
 
 <!--header-->
 <header>
-    <a id="toggleButtonMenu" class="mobileMenu" href="#"><svg width="80px" height="80px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#ECEFF3"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#ECEFF3"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#ECEFF3"/></svg></a>
+    <a id="toggleButtonMenu" class="mobileMenu" href="#" title="Menu"><svg width="80px" height="80px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M41,14H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,14Z" fill="#ECEFF3"/><path d="M41,26H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,26Z" fill="#ECEFF3"/><path d="M41,38H7a2,2,0,0,1,0-4H41A2,2,0,0,1,41,38Z" fill="#ECEFF3"/></svg></a>
     <div id="headInfos">
     <div id="mainTitle"><a href="index.html"><h1>CLUB AUTO</h1></a></div>
     <div id="adress" class="iconTextGrid"><img src="images/icone-adresse.png" alt="Icone adresse"><p><span class="brownTouch isBold">Adresse : </span><br/>AVENUE CHARLES DE GAULLE<br/>75000 PARIS</p></div>
     <div id="tel" class="iconTextGrid"><img src="images/icon-telephone.png" alt="Icone Téléphone"><p><span class="brownTouch isBold">Téléphone :</span><br/><span class="whiteTouch isBold  isBigger">01 23 45 67 89</span></p></div>
     <div id="horaires"><p><span class="brownTouch isBold">OUVERTURE :</span> <span class="whiteTouch isBold">Du lundi au Samedi</span><br/><span class="brownTouch isBold">HORAIRES :</span> <span class="whiteTouch isBold">De 9h à 17h</span></p></div>
-    <!--<div id="headerSocials"><a href=""><img src="images/fb.png" alt=""></a><a href=""><img src="images/twt.png" alt=""></a></div>-->
     <div id="headerSocials">
         <a href="https://www.facebook.com/" target="_blank" title="Lien vers notre page facebook"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
         <a href="https://twitter.com" target="_blank" title="Lien vers notre compte X (ex Twitter)"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>      
@@ -102,7 +101,7 @@
         
         </div>
 
-        <img class="presentationImg" src="images/entretien.jpg" sizes="40vw" srcset="images/entretien-400.webp 400w, images/entretien-600.webp 600w, images/entretien-800.webp 800w, images/entretien-1000.webp 1000w, images/entretien-1500.webp 1500w" alt="Un employé effectuant l'entretien d'un véhicule" title="Un employé effectuant l'entretien d'un véhicule" loading="lazy">
+        <img class="presentationImg" src="images/entretien.jpg" sizes="40vw" srcset="images/entretien-400.webp 400w, images/entretien-600.webp 600w, images/entretien-800.webp 800w, images/entretien-1000.webp 1000w, images/entretien-1500.webp 1500w" alt="Un employé effectuant l'entretien d'un véhicule" title="Un employé effectuant l'entretien d'un véhicule">
 </article>
 <!-- Fin carte Le meilleur de l'automobile-->
 
@@ -137,7 +136,7 @@
 
 <div id="carsWrapper">
 <article class="cardCars"><a href="singleCar.html"><img src="images/vehicule2.jpg" sizes="40vw" srcset="images/vehicule2-400.webp 400w, images/vehicule2-600.webp 600w, images/vehicule2-800.webp 800w, images/vehicule2-1000.webp 1000w, images/vehicule2-1500.webp 1500w" alt="" loading="lazy"><div class="cardCarsInfo"><p><span class="whiteTouch">BMW 535I, NAVI, LEATHER, ABS</span></p><div class="priceTag">5 500 €</div></div></a></article>
-<article class="cardCars"><a href="singleCar.html"><img src="images/vehicule2.jpg" sizes="40vw" srcset="images/vehicule2-400.webp 400w, images/vehicule2-600.webp 600w, images/vehicule2-800.webp 800w, images/vehicule2-1000.webp 1000w, images/vehicule2-1500.webp 1500w" alt=""><div class="cardCarsInfo"><p><span class="whiteTouch">BMW 328I, SPORT LINE BODY KIT</span></p><div class="priceTag">8 000 €</div></div></a></article>
+<article class="cardCars"><a href="singleCar.html"><img src="images/vehicule2.jpg" sizes="40vw" srcset="images/vehicule2-400.webp 400w, images/vehicule2-600.webp 600w, images/vehicule2-800.webp 800w, images/vehicule2-1000.webp 1000w, images/vehicule2-1500.webp 1500w" alt="" loading="lazy"><div class="cardCarsInfo"><p><span class="whiteTouch">BMW 328I, SPORT LINE BODY KIT</span></p><div class="priceTag">8 000 €</div></div></a></article>
 <article class="cardCars"><a href="singleCar.html"><img src="images/vehicule2.jpg" sizes="40vw" srcset="images/vehicule2-400.webp 400w, images/vehicule2-600.webp 600w, images/vehicule2-800.webp 800w, images/vehicule2-1000.webp 1000w, images/vehicule2-1500.webp 1500w" alt="" loading="lazy"><div class="cardCarsInfo"><p><span class="whiteTouch">FORD EXPLORER 2015 4WD</span></p><div class="priceTag"><span class="isCrossed">9 000 €</span><br/> 8 200 €</div></div></a></article>
 </div>
 </section>
@@ -175,12 +174,6 @@
 <!--FIN CONCLUSION-->
 
 
-
-
-
-
-
-
 </main>
 
 
@@ -214,12 +207,7 @@
 
         <div class="info"><h3 class="whiteTouch isBold">RESEAUX SOCIAUX</h3>
             <div class="socials">
-            <!--<a href="https://www.facebook.com/" target="_blank"><img src="images/fb.png" alt="Logo Facebook" title="Lien vers notre page Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twt.png" alt="Logo Twitter" title="Lien vers notre compte Twitter"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="images/insta.png" alt="Logo Instagram" title="Lien vers notre compte Instagram"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="images/lkdn.png" alt="Logo Linkedin" title="Lien vers notre page Linkedin"></a>
-            <a href="https://www.youtube.com" target="_blank"><img src="images/yt.png" alt="Logo Youtube" title="Lien vers notre page Youtube"></a>-->
-            <a href="https://www.facebook.com/" target="_blank" title="Lien vers notre page Facebook"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+               <a href="https://www.facebook.com/" target="_blank" title="Lien vers notre page Facebook"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
             <a href="https://twitter.com" target="_blank" title="Lien vers notre compte Twitter"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
             <a href="https://www.instagram.com" target="_blank" title="Lien vers notre compte Instagram"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
             <a href="https://www.linkedin.com" target="_blank" title="Lien vers notre page Linkedin"><svg fill="#ECEFF3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
@@ -234,6 +222,6 @@
 
 <!--FIN FOOTER-->
 
-<script src="js/main.js" defer></script>
+<script src="js/main-min.js" defer></script>
 </body>
 </html>

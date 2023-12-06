@@ -1,7 +1,3 @@
-console.log("ok js");
-
-//
-
 var navEl = document.querySelector("nav");
 
 window.addEventListener(
@@ -15,8 +11,6 @@ window.addEventListener(
     } else {
       navEl.classList.remove("isFixed");
     }
-
-    //console.log(this.scrollY);
   },
   false
 );
@@ -48,18 +42,7 @@ onglets.forEach((btOnglet) => {
   });
 });
 
-//const btDesc=document.getElementById("btDesc");
-/*btDesc.addEventListener("click", function(e){
-  e.preventDefault();
-//console.log("click");
-fillSubCont(1);
-
-});
-*/
-
 function fillSubCont(onglet) {
-  //console.log("auto ?");
-
   singleCont.innerHTML = "";
   var htmlIn;
 

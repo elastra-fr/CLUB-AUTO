@@ -31,7 +31,6 @@ Structure fichier CSS :
 
     scroll-behavior: smooth;
 
-
 }
 
 /*Coloration ponctuelle texte*/
@@ -41,27 +40,19 @@ Structure fichier CSS :
 
 .blueTouch {
     color: var(--ClubAutoBleu);
-
 }
 
 .brownTouch {
     color: var(--ClubAutoMarron);
-
 }
-
-
 
 .isBold {
     font-weight: bolder;
-
 }
 
 .isBigger {
     font-size: 1.5em;
-
 }
-
-
 
 html {
     box-sizing: border-box;
@@ -78,11 +69,7 @@ body {
     margin: 0 auto;
     font-family: var(--ClubAutoTexte);
     color: var(--ClubAutoGris);
-
-
 }
-
-
 
 h1,
 h2,
@@ -107,29 +94,22 @@ button,
 textarea {
     font-size: inherit;
     font-family: var(--ClubAutoTexte);
-
 }
 
 /*Header*/
 
 header {
     background-color: var(--ClubAutoNoir);
-
 }
 
 .mobileMenu {
-    /*float: right;
-    display: block;*/
     position: fixed;
     right: 10px;
     top: -22px;
     z-index: 1200;
-
 }
 
 .mobileMenu svg {
-
-
     margin-top: 30px;
     margin-right: 15px;
     width: 50px;
@@ -139,11 +119,8 @@ header {
     fill: var(--ClubAutoMarron);
 }
 
-
-
 header h1 {
     padding-left: 3.5vw;
-
     padding-bottom: 20px;
     margin-bottom: auto;
     color: var(--ClubAutoBlanc);
@@ -153,12 +130,9 @@ header h1 {
 
 #headInfos h1 {
     margin-top: auto;
-
 }
 
 #headInfos {
-
-
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -172,13 +146,11 @@ header h1 {
 #horaires,
 #headerSocials {
     display: none;
-
 }
 
 
 #headInfos div {
     margin-top: 80px;
-
 }
 
 #headInfos div img {
@@ -200,8 +172,6 @@ header h1 {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: start;
-
-
 }
 
 .iconTextGrid p {
@@ -209,24 +179,17 @@ header h1 {
     margin-left: 2px;
 }
 
-
-
 .iconTextGrid div {
-
     display: flex;
     flex-direction: column;
-
-
 }
 
 #horaires {
     align-self: auto;
-
 }
 
 #horaires p {
     margin-top: 0;
-
 }
 
 
@@ -248,7 +211,6 @@ header h1 {
 .flexContCol {
     display: flex;
     flex-direction: column;
-
 }
 
 #mainImg {
@@ -263,7 +225,6 @@ header h1 {
     object-fit: cover;
     content: 50% 50%;
     height: 300px;
-
 }
 
 /*Fin header*/
@@ -284,12 +245,10 @@ header h1 {
     font-size: 1.2em;
     transition: left 0.8s;
     z-index: 900;
-
 }
 
 .hidden {
     left: -1000px;
-
 }
 
 .visible {
@@ -303,22 +262,15 @@ header h1 {
     border-left: 2px solid var(--ClubAutoMarron);
     padding: 10px;
     margin: 10px;
-
-
 }
 
 #wrapMenu:first-child {
     margin-top: 80px;
-
-
 }
 
 #wrapMenu li:hover>a {
     color: var(--ClubAutoMarron);
-
-
 }
-
 
 #wrapMenu li a {
     display: inline-block;
@@ -327,17 +279,12 @@ header h1 {
     width: 100%;
     color: var(--ClubAutoBlanc);
     transition: color 0.5s;
-
-
 }
-
-
 
 .menuToggle {
     display: none;
 
 }
-
 
 
 /*FIN NAVIGATION*/
@@ -352,8 +299,6 @@ footer {
     background-color: var(--ClubAutoNoir);
 }
 
-
-
 #footerInfo {
     margin: 40px 10px;
     display: grid;
@@ -361,7 +306,6 @@ footer {
     grid-template-rows: repeat(4, auto);
     justify-items: center;
     border-bottom: 1px solid var(--ClubAutoBlanc);
-
 }
 
 .info {
@@ -373,19 +317,15 @@ footer {
 
 .info p {
     margin-top: 0;
-
 }
 
 #mention {
     justify-self: center;
-
 }
 
 .newsLetter {
     display: flex;
     align-content: center;
-
-
 }
 
 .newsLetter input {
@@ -411,8 +351,6 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
-
-
 }
 
 .socials a {
@@ -423,7 +361,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .socials a img {
@@ -435,12 +372,10 @@ footer {
     width: 25px;
     height: 25px;
     transition: fill 0.5s;
-
 }
 
 .socials a:hover>svg {
     fill: var(--ClubAutoMarron);
-
 }
 
 /*Fin Footer*/
@@ -464,28 +399,17 @@ footer {
     grid-template-columns: 1fr;
     gap: 20px;
 
-
-
-    /*display: flex;
-    flex-direction: column;*/
-
-
-
 }
 
 .cardText {
     height: auto;
 }
 
-
-
-
 .presentationImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
     align-self: center;
-
 }
 
 .check {
@@ -511,7 +435,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 44px;
-
 }
 
 #saleOrLoc article a {
@@ -520,35 +443,26 @@ footer {
 
 .saleOrLocCard {
     width: 100%;
-
-
 }
 
 .saleOrLocCard h2 {
-
-
     max-width: 50%;
     margin: 5% auto;
     color: var(--ClubAutoNoir);
-
 }
 
 .saleOrLocCard p {
-
     color: var(--ClubAutoBlanc);
     max-width: 50%;
     margin: 10px auto;
-
 }
 
 .locCard {
     background-color: rgba(250, 182, 55, 0.8);
-
 }
 
 .saleCard {
     background-color: rgba(255, 72, 72, 0.8);
-
 }
 
 /*Fin section vente ou location*/
@@ -560,7 +474,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
 
 .decoTitle {
@@ -569,14 +482,12 @@ footer {
     width: 90%;
     margin: 20px auto;
     border-bottom: var(--ClubAutoMarron) 2px solid;
-
 }
 
 #carsWrapper {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .cardCars {
@@ -586,7 +497,6 @@ footer {
 
 .cardCars a:hover>div {
     border: 2px solid var(--ClubAutoBleu);
-
 }
 
 
@@ -598,8 +508,6 @@ footer {
     font-weight: bold;
     margin-bottom: 20px;
     height: 110px;
-
-
 }
 
 
@@ -607,8 +515,6 @@ footer {
     width: 90%;
     margin: 5px auto;
     border: 2px solid var(--ClubAutoGris);
-
-
 }
 
 .cardCarsInfo p {
@@ -616,9 +522,6 @@ footer {
     width: 60%;
     font-size: 0.85em;
 }
-
-
-
 
 .priceTag {
     margin-top: 1em;
@@ -629,7 +532,6 @@ footer {
     color: var(--ClubAutoBlanc);
     font-weight: bold;
     font-size: 0.85em;
-
 }
 
 .isCrossed {
@@ -637,12 +539,10 @@ footer {
     font-size: 0.75em;
     font-weight: lighter;
     text-decoration: line-through;
-
 }
 
 #carsWrapper article img {
     width: 100%;
-
 }
 
 /*Fin section véhicules récents*/
@@ -661,7 +561,6 @@ footer {
 #whyUs h3 {
     align-self: center;
     color: var(--ClubAutoNoir);
-
 }
 
 #whyUsWrapper {
@@ -669,7 +568,6 @@ footer {
     flex-direction: column;
     margin: 20px auto;
     gap: 20px;
-
 }
 
 .cardWhy {
@@ -679,15 +577,11 @@ footer {
         " icone texte"
         "icone texte";
     gap: 20px;
-
-
-
 }
 
 .cardWhy img {
     grid-area: icone;
     width: 65px;
-
 }
 
 .cardWhy h3 {
@@ -704,7 +598,6 @@ footer {
     color: grey;
     font-size: 0.9em;
     align-self: flex-end;
-
 }
 
 .buttonWhy {
@@ -719,49 +612,34 @@ footer {
     border: none;
     margin: 25PX auto;
     transition: background-color 0.5s, color 0.6s;
-
-
 }
 
 .buttonWhy:hover {
 
     background-color: var(--ClubAutoMarron);
     color: var(--ClubAutoNoir);
-
-
 }
-
-
-
 
 /*Fin Section Pourquoi nous*/
 
 /*Section conclusion*/
 
 #conclusion {
-
-
     margin: 0 auto;
     background-image: url("../images/vehicule3-600.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
-
-
-
 }
 
 #conclusion article p {
     color: var(--ClubAutoNoir);
-
 }
 
 #conclusion article a {
     text-decoration: none;
     color: var(--ClubAutoNoir);
-
-
 }
 
 /*Fin Section conclusion*/
@@ -775,7 +653,6 @@ footer {
     position: relative;
     top: -50px;
     height: 0;
-
 }
 
 
@@ -793,31 +670,22 @@ footer {
     position: relative;
     top: -13%;
     z-index: 800;
-
 }
 
 #contactContent {
     background-color: #ECEFF3;
     height: auto;
     display: grid;
-    /* background-image: url("../images/vehicule3.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            */
 }
 
 #inputsWrapper {
-
     gap: 25px;
-
 }
 
 #contactForm p {
     font-weight: bold;
     font-size: 2em;
     font-family: var(--ClubAutoTitres);
-
 }
 
 #contactForm input[type=submit] {
@@ -834,12 +702,9 @@ footer {
 }
 
 #contactForm input[type=submit]:hover {
-
     background-color: var(--ClubAutoMarron);
     color: var(--ClubAutoNoir);
     cursor: pointer;
-
-
 }
 
 #buttonBox {
@@ -887,7 +752,6 @@ footer {
     text-decoration: none;
     color: #aeb1b5;
     font-size: 0.75em;
-
 }
 
 .breadcrumbs li+li:before {
@@ -915,7 +779,6 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
 
 .singleCarWrapper {
@@ -923,19 +786,12 @@ footer {
     display: flex;
     flex-direction: column;
     color: var(--ClubAutoNoir);
-
 }
 
 .singleCarWrapper {
     margin: 0 auto;
-
 }
 
-/*.singleCarWrapper img, nav{
-            width: 100%;
-            
-                }
-    */
 #singleCarImg {
     width: 90%;
     margin: 15px auto;
@@ -948,13 +804,9 @@ footer {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-
-
 }
 
 .itemOnglets {
-
-
     text-align: center;
     background-color: var(--ClubAutoNoir);
     transition: border-top 0.4s, background-color 0.5s;
@@ -963,22 +815,17 @@ footer {
     height: 60px;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .itemOnglets:hover {
     border-top: 4px solid var(--ClubAutoMarron);
     background-color: var(--ClubAutoGris);
     cursor: pointer;
-
-
 }
 
 
 .itemOnglets:hover>a {
     color: var(--ClubAutoNoir);
-
 }
 
 .itemOnglets a {
@@ -991,7 +838,6 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 #quote {
@@ -1000,71 +846,48 @@ footer {
     padding-left: 30px;
     border-left: 5px solid var(--ClubAutoMarron);
     color: grey;
-
 }
 
 /************************************5-  MEDIA QUERIES ******************************************************/
 
-
-
 @media screen and (min-width: 768px) {
 
     .isFixed {
-
         position: fixed;
         top: 5px;
         max-width: var(--ClubAutoMaxWidth);
         width: 100%;
-
     }
 
 
     .isBigger {
         font-size: 1.45vw;
-
     }
 
     /*HEADER + NAVIGATION*/
 
-
-
-
-
     .mobileMenu {
-
         display: none;
-
-
     }
-
 
     #mainTitle,
     #adress,
     #horaires,
     #headerSocials {
         display: unset;
-
     }
 
     #mainTitle {
-
         align-self: center;
-
     }
 
     #mainTitle h1 {
-
         align-self: center;
         margin-left: 0;
         padding-left: 0;
-
-
     }
 
-
-
     #headInfos {
-
         max-width: var(--ClubAutoInnerWidth);
         display: grid;
         grid-template-columns: 1.5fr repeat(4, 1fr);
@@ -1074,20 +897,16 @@ footer {
         gap: 15px;
         margin: 0 auto;
         font-size: 1.2vw;
-
     }
 
     #headInfos div {
         margin-top: 20px;
-
     }
 
     #adress.iconTextGrid {
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: start;
-
-
     }
 
     #adress.iconTextGrid p {
@@ -1095,28 +914,20 @@ footer {
         margin-left: 2px;
     }
 
-
-
     #adress.iconTextGrid div {
-
         display: flex;
         flex-direction: column;
-
-
     }
 
     #headerSocials {
         display: flex;
         justify-self: center;
-
-
     }
 
     .navImgGrid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-
     }
 
     header nav {
@@ -1127,8 +938,6 @@ footer {
         margin-top: 0;
         height: fit-content;
     }
-
-
 
     #wrapMenu {
         position: static;
@@ -1143,7 +952,6 @@ footer {
         margin-bottom: 0;
         width: auto;
         margin-top: 0;
-
     }
 
 
@@ -1159,20 +967,16 @@ footer {
 
     #wrapMenu:first-child {
         margin-top: 0;
-
-
     }
 
     #wrapMenu li:last-child {
         margin-right: 83px;
-
     }
 
     #wrapMenu li a:hover {
         border: none;
         color: var(--ClubAutoBlanc);
         background-color: var(--ClubAutoMarron);
-
     }
 
     #wrapMenu li a {
@@ -1180,22 +984,17 @@ footer {
         align-self: center;
         color: var(--ClubAutoNoir);
         transition: color 0.7s, background-color 0.5s;
-
     }
 
     #mainImg {
         display: unset;
         width: 100%;
-        /*height: 45vh;*/
         object-fit: cover;
         object-position: 50% 33%;
         grid-row: 1;
         grid-column: 1;
         transition: height 1s ease;
-
-
     }
-
 
 
     /*FIN HEADER + NAVIGATION*/
@@ -1208,8 +1007,6 @@ footer {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
         max-width: var(--ClubAutoInnerWidth);
-
-
     }
 
     /*Fin Section présentation*/
@@ -1219,11 +1016,8 @@ footer {
     #saleOrLoc {
         flex-direction: row;
         justify-content: center;
-
         background-image: url("../images/vente-location-800.webp");
     }
-
-
 
     .saleOrLocCard {
         width: 45%;
@@ -1232,47 +1026,34 @@ footer {
     }
 
     .saleOrLocCard h2 {
-
-
         max-width: 80%;
         margin: 5% auto;
-
     }
 
     .saleOrLocCard p {
-
         color: var(--ClubAutoBlanc);
         max-width: 80%;
         margin: 10px auto;
-
     }
 
 
     /*Fin Section vente-loc*/
 
-
-
     /*Section new cars*/
 
-
-
     #carsWrapper {
-
         flex-direction: row;
         gap: 20px;
         justify-content: space-around;
-
     }
 
     .cardCars {
         width: 30%;
-
     }
 
     .cardCarsInfo {
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     .priceTag {
@@ -1285,32 +1066,19 @@ footer {
     /*Section pourquoi nous*/
 
     #whyUsWrapper {
-
         flex-direction: row;
         justify-content: space-between;
-
-
     }
 
     /*Fin section pourquoi nous*/
 
     /*Section conclusion*/
     #conclusion article {
-
         margin-left: 15%;
-
-
     }
 
     #conclusion {
-
-
-
         background-image: url("../images/vehicule3-800.webp");
-
-
-
-
     }
 
     /*Section conclusion*/
@@ -1326,48 +1094,32 @@ footer {
         grid-template-rows: 1fr;
         justify-items: center;
         gap: 20px;
-
     }
 
     .info p {
         font-size: 1.3vw;
-
     }
 
 
 
     /*FIN FOOTER*/
 
-
-
     /***********MQ Page contact*****************/
-
-
 
     .mainTitleOtherPages {
         font-size: 1em;
         align-self: center;
         position: unset;
         height: unset;
-
-
-
     }
 
     .mainTitleOtherPages h1 {
         margin-left: 0;
         padding-left: 0;
-
     }
 
     #contactContent {
-
         min-height: 60vh;
-        /* background-image: url("../images/vehicule3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    */
     }
 
     #contactForm {
@@ -1376,16 +1128,11 @@ footer {
             "inputs inputs textarea"
             "inputs inputs textarea"
             "void void button";
-
-
-
-
     }
 
     #contactForm p {
         grid-area: title;
         font-size: 2.5em;
-
     }
 
     #contactForm input[type=submit] {
@@ -1399,23 +1146,17 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2%;
-
-
     }
 
     .flexContCol textarea {
-
         height: 100%;
-
     }
 
     #messageBox {
         grid-area: textarea;
-
     }
 
     #buttonBox {
-
         justify-content: start;
     }
 
@@ -1424,32 +1165,26 @@ footer {
     /***********Fin MQ Page contact*****************/
 
     /**************MQ Single car**********************/
+
     #mainSingleCar {
         max-width: 60%;
         margin-left: 83px;
-
     }
 
     .singleCarWrapper {
         margin-left: 35px;
-
     }
 
     #onglets {
         flex-direction: row;
         justify-content: space-around;
-
     }
 
     .itemOnglets {
         width: 100%;
     }
 
-
-
     /*Fin MQ Single car*/
-
-
 
 }
 
@@ -1457,36 +1192,25 @@ footer {
 
     .isBigger {
         font-size: 1.3em;
-
     }
 
     #headInfos {
-
         font-size: 1em;
-
     }
 
     .info p {
         font-size: 1em;
-
     }
 
     #saleOrLoc {
         flex-direction: row;
         justify-content: center;
-
         background-image: url("../images/vente-location-1500.webp");
     }
 
 
     #conclusion {
-
-
-
         background-image: url("../images/vehicule3-1500.webp");
-
-
-
     }
 
 }
