@@ -96,6 +96,10 @@ textarea {
     font-family: var(--ClubAutoTexte);
 }
 
+header, #wrapMenu, .cardCarsInfo, footer {
+  background-color: var(--ClubAutoNoir);
+}
+
 /*Header*/
 
 header {
